@@ -1,0 +1,16 @@
+<%= form_with(model: @tweet, local: true) do |x| %>
+<br>
+    <div>
+        <div> 
+            <%=x.label :description, "Tweet" %> 
+            <div>
+                <%= x.text_field :description, palceholder: "Tweeet something" %>
+            </div>
+        </div>
+
+        <div>
+        <%= x.submit %>
+        </div>
+        
+    </div>
+<% end %>
